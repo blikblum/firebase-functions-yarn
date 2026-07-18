@@ -1,0 +1,7 @@
+{
+  "name": "firebase-functions-yarn",
+  "packageManager": "yarn@4.17.1",
+  "workspaces": [
+    "functions"
+  ]
+}
