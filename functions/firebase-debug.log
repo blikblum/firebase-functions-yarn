@@ -1,0 +1,83 @@
+[debug] [2026-07-18T13:00:20.859Z] ----------------------------------------------------------------------
+[debug] [2026-07-18T13:00:20.860Z] Command:       /home/luiz/.nvm/versions/node/v24.12.0/bin/node /home/luiz/.nvm/versions/node/v24.12.0/bin/firebase emulators:start --only functions --debug
+[debug] [2026-07-18T13:00:20.861Z] CLI Version:   15.24.0
+[debug] [2026-07-18T13:00:20.861Z] Platform:      linux
+[debug] [2026-07-18T13:00:20.861Z] Node Version:  v24.12.0
+[debug] [2026-07-18T13:00:20.861Z] Detected Agent: unknown
+[debug] [2026-07-18T13:00:20.861Z] Time:          Sat Jul 18 2026 10:00:20 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2026-07-18T13:00:20.861Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2026-07-18T13:00:21.279Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2026-07-18T13:00:21.279Z] > authorizing via signed-in user (nefrolog.suporte@gmail.com)
+[info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
+[info] i  emulators: Detected demo project ID "demo-no-project", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail. {"metadata":{"emulator":{"name":"hub"},"message":"Detected demo project ID \"demo-no-project\", emulated services will use a demo configuration and attempts to access non-emulated services for this project will fail."}}
+[debug] [2026-07-18T13:00:21.282Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-07-18T13:00:21.282Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2026-07-18T13:00:21.285Z] Write emulator hub locator at /tmp/hub-demo-no-project.json
+[debug] [2026-07-18T13:00:21.288Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-07-18T13:00:21.288Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-07-18T13:00:21.288Z] [tasks] Cloud Tasks Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2026-07-18T13:00:21.289Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}],"tasks":[{"address":"127.0.0.1","family":"IPv4","port":9499}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[debug] [2026-07-18T13:00:21.297Z] defaultcredentials: writing to file /home/luiz/.config/firebase/nefrolog_suporte_gmail.com_application_default_credentials.json
+[debug] [2026-07-18T13:00:21.298Z] Setting GAC to /home/luiz/.config/firebase/nefrolog_suporte_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/luiz/.config/firebase/nefrolog_suporte_gmail.com_application_default_credentials.json"}}
+[info] i  functions: Watching "/home/luiz/repositories/firebase-functions-yarn/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/home/luiz/repositories/firebase-functions-yarn/functions\" for Cloud Functions..."}}
+[debug] [2026-07-18T13:00:21.307Z] Validating nodejs source
+[debug] [2026-07-18T13:00:21.643Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "24"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^13.6.0",
+    "firebase-functions": "^7.0.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.4.1"
+  },
+  "private": true
+}
+[debug] [2026-07-18T13:00:21.643Z] Building nodejs source
+[debug] [2026-07-18T13:00:21.643Z] Failed to find version of module node: reached end of search path /home/luiz/repositories/firebase-functions-yarn/functions/node_modules
+[info] ✔  functions: Using node@24 from host. 
+[debug] [2026-07-18T13:00:21.645Z] Could not find functions.yaml. Must use http discovery
+[error] ⬢  functions: Failed to load function definition from source: FirebaseError: Failed to find location of Firebase Functions SDK. Please file a bug on Github (https://github.com/firebase/firebase-tools/). {"metadata":{"emulator":{"name":"functions"},"message":"Failed to load function definition from source: FirebaseError: Failed to find location of Firebase Functions SDK. Please file a bug on Github (https://github.com/firebase/firebase-tools/)."}}
+[debug] [2026-07-18T13:00:21.653Z] Could not find VSCode notification endpoint: TypeError: fetch failed. If you are not running the Firebase SQL Connect VSCode extension, this is expected and not an issue.
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://127.0.0.1:4000/               │
+└─────────────────────────────────────────────────────────────┘
+
+┌───────────┬────────────────┬─────────────────────────────────┐
+│ Emulator  │ Host:Port      │ View in Emulator UI             │
+├───────────┼────────────────┼─────────────────────────────────┤
+│ Functions │ 127.0.0.1:5001 │ http://127.0.0.1:4000/functions │
+└───────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub host: 127.0.0.1 port: 4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[debug] [2026-07-18T13:09:53.233Z] Received signal SIGINT (Ctrl-C) 1
+[info]  
+[info] i  emulators: Received SIGINT (Ctrl-C) for the first time. Starting a clean shutdown. 
+[info] i  emulators: Please wait for a clean shutdown or send the SIGINT (Ctrl-C) signal again to stop right now. 
+[debug] [2026-07-18T13:09:53.236Z] Found emulator hub locator: {"version":"15.24.0","origins":["http://127.0.0.1:4400","http://[::1]:4400"],"pid":1196610}
+[debug] [2026-07-18T13:09:53.237Z] Delete emulator hub locator file: /tmp/hub-demo-no-project.json
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  ui: Stopping Emulator UI {"metadata":{"emulator":{"name":"ui"},"message":"Stopping Emulator UI"}}
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  eventarc: Stopping Eventarc Emulator {"metadata":{"emulator":{"name":"eventarc"},"message":"Stopping Eventarc Emulator"}}
+[info] i  tasks: Stopping Cloud Tasks Emulator {"metadata":{"emulator":{"name":"tasks"},"message":"Stopping Cloud Tasks Emulator"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[info] i  logging: Stopping Logging Emulator {"metadata":{"emulator":{"name":"logging"},"message":"Stopping Logging Emulator"}}
+[debug] [2026-07-18T13:09:53.250Z] Could not find VSCode notification endpoint: TypeError: fetch failed. If you are not running the Firebase SQL Connect VSCode extension, this is expected and not an issue.
